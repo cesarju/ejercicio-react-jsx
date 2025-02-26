@@ -14,7 +14,6 @@ function App() {
         edad={7}
         image="https://content.elmueble.com/medio/2023/05/25/cachorro-de-bichon-maltes_61209cca_230525143331_1000x1500.jpg"
         enAdopcion={true}
-        donar={true}
       />
       <Card
         nombre="Max"
@@ -22,7 +21,7 @@ function App() {
         edad={7}
         image="https://content.elmueble.com/medio/2023/05/25/cachorro-de-bichon-maltes_61209cca_230525143331_1000x1500.jpg"
         enAdopcion={false}
-        donar={false}
+        fecha={"01-01-2025"}
       />
       <Card
         nombre="Max"
@@ -30,7 +29,6 @@ function App() {
         edad={7}
         image="https://content.elmueble.com/medio/2023/05/25/cachorro-de-bichon-maltes_61209cca_230525143331_1000x1500.jpg"
         enAdopcion={true}
-        donar={true}
       />
     </>
   );
