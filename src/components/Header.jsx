@@ -1,52 +1,73 @@
+import "./header.css";
+
 export function Header(props) {
   if (props.isLoggedIn && props.rol === "") {
     return (
-      <nav>
-        <ul>
-          <li>
-            <a href="">Home</a>
+      <nav className="header">
+        <h1>🐕</h1>
+        <ul className="nav-list">
+          <li className="nav-item">
+            <a className="nav-link" href="">
+              Home
+            </a>
           </li>
-          <li>
+          <li className="nav-item">
             <a href="">List</a>
           </li>
-          <li>
-            <a href="">About me</a>
+          <li className="nav-item">
+            <a className="nav-link" href="">
+              About me
+            </a>
           </li>
         </ul>
       </nav>
     );
   } else if (props.rol === "Admin" && props.isLoggedIn) {
     return (
-      <nav>
-        <ul>
-          <li>
-            <a href="">Home</a>
+      <nav className="header">
+        <p className="logo-container">🐕</p>
+        <ul className="nav-list">
+          <li className="nav-item">
+            <a className="nav-link" href="">
+              Inicio
+            </a>
           </li>
-          <li>
-            <a href="">Elimiar</a>
+          <li className="nav-item">
+            <a className="nav-link" href="">
+              Perdidos
+            </a>
           </li>
-          <li>
-            <a href="">editar</a>
+          <li className="nav-item">
+            <a className="nav-link" href="">
+              Adopción
+            </a>
           </li>
-
-          <li>
-            <a href="">Login</a>
+          <li className="nav-item">
+            <a className="nav-link" href="">
+              Refugios
+            </a>
           </li>
-          <li>
-            <a href="">Singup</a>
+          <li className="nav-item">
+            <a className="nav-link" href="">
+              Contacto
+            </a>
           </li>
         </ul>
       </nav>
     );
   } else {
     return (
-      <nav>
-        <ul>
-          <li>
-            <a href="">Login</a>
+      <nav className="header">
+        <ul className="nav-list">
+          <li className="nav-item">
+            <a className="nav-link" href="">
+              Login
+            </a>
           </li>
-          <li>
-            <a href="">Singup</a>
+          <li className="nav-item">
+            <a className="nav-link" href="">
+              Singup
+            </a>
           </li>
         </ul>
       </nav>
