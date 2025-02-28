@@ -3,7 +3,8 @@ const data = [
     nombre: "Luna",
     raza: "Labrador",
     edad: 3,
-    image: "",
+    image:
+      "https://content.elmueble.com/medio/2023/05/25/cachorro-de-bichon-maltes_61209cca_230525143331_1000x1500.jpg",
     enAdopcion: true,
     fecha: "",
     ubicacionEncontrado: {
@@ -26,7 +27,8 @@ const data = [
     nombre: "Rocky",
     raza: "Labrador",
     edad: 5,
-    image: "",
+    image:
+      "https://imgs.search.brave.com/SXuyQfi9dlsHfc2vGWKBynbdVzynMALTzNbIg_xUDws/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/Zm90b3MtcHJlbWl1/bS9wZXJyaXRvc18y/MzE5NzQtMTguanBn/P3NlbXQ9YWlzX2h5/YnJpZA",
     enAdopcion: false,
     fecha: "15-03-2024",
     lugar: "Refugio Patitas Felices, Monterrey",
@@ -50,7 +52,8 @@ const data = [
     nombre: "Bella",
     raza: "Bulldog",
     edad: 2,
-    image: "",
+    image:
+      "https://imgs.search.brave.com/ufw2ISD9OWn64FUNeiHNfvhmq6x3uj52ilkpk5F23K0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJzLmNvbS9p/bWFnZXMvaGQvcHVw/cHktZG9nLXBpY3R1/cmVzLTQ0Z2ZxbmZk/MHJnb3VmbTIuanBn",
     enAdopcion: true,
     fecha: "",
     lugar: "Casa de acogida, Puebla",
@@ -74,8 +77,59 @@ const data = [
     nombre: "Toby",
     raza: "Siamesa",
     edad: 4,
-    image: "",
+    image:
+      "https://imgs.search.brave.com/6NziOz42zYWckiQNxQaVoSDXQ3S5FCXYD9BBir3Mfds/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzA5Lzk2LzkxLzk1/LzM2MF9GXzk5Njkx/OTU3OV9qMkZpekNn/WGw2OWZLbmlTVHZh/cE9hbjFPeGVDdW9s/WS5qcGc",
     enAdopcion: false,
+    fecha: "10-12-2023",
+    lugar: "Refugio Huellitas de Amor, Querétaro",
+    ubicacionEncontrado: {
+      calle: "Calle San Martín",
+      numero: 321,
+      ciudad: "Santa Cruz de la Sierra",
+      provincia: "Santa Cruz",
+      pais: "Bolivia",
+    },
+    estadoSalud: "Bueno",
+    descripcion:
+      "Toby es una gata tranquila y curiosa. Fue rescatada de un edificio abandonado.",
+    contactoRescate: {
+      nombre: "Gatitos Bolivia",
+      telefono: "+591 6789 1234",
+      email: "gatitos@bolivia.com",
+    },
+  },
+  {
+    nombre: "Toby",
+    raza: "Siamesa",
+    edad: 4,
+    image:
+      "https://imgs.search.brave.com/6NziOz42zYWckiQNxQaVoSDXQ3S5FCXYD9BBir3Mfds/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzA5Lzk2LzkxLzk1/LzM2MF9GXzk5Njkx/OTU3OV9qMkZpekNn/WGw2OWZLbmlTVHZh/cE9hbjFPeGVDdW9s/WS5qcGc",
+    enAdopcion: false,
+    fecha: "10-12-2023",
+    lugar: "Refugio Huellitas de Amor, Querétaro",
+    ubicacionEncontrado: {
+      calle: "Calle San Martín",
+      numero: 321,
+      ciudad: "Santa Cruz de la Sierra",
+      provincia: "Santa Cruz",
+      pais: "Bolivia",
+    },
+    estadoSalud: "Bueno",
+    descripcion:
+      "Toby es una gata tranquila y curiosa. Fue rescatada de un edificio abandonado.",
+    contactoRescate: {
+      nombre: "Gatitos Bolivia",
+      telefono: "+591 6789 1234",
+      email: "gatitos@bolivia.com",
+    },
+  },
+  {
+    nombre: "Toby",
+    raza: "Siamesa",
+    edad: 4,
+    image:
+      "https://imgs.search.brave.com/6NziOz42zYWckiQNxQaVoSDXQ3S5FCXYD9BBir3Mfds/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzA5Lzk2LzkxLzk1/LzM2MF9GXzk5Njkx/OTU3OV9qMkZpekNn/WGw2OWZLbmlTVHZh/cE9hbjFPeGVDdW9s/WS5qcGc",
+    enAdopcion: true,
     fecha: "10-12-2023",
     lugar: "Refugio Huellitas de Amor, Querétaro",
     ubicacionEncontrado: {

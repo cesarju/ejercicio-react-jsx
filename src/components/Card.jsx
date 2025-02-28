@@ -1,6 +1,18 @@
 import "./card.css";
 
-const Card = ({ nombre, raza, edad, enAdopcion, image, fecha }) => {
+const Card = ({
+  nombre,
+  raza,
+  edad,
+  enAdopcion,
+  image,
+  fecha,
+  onClickDetails,
+}) => {
+  const handleClickName = (nombre) => {
+    onClickDetails(nombre);
+  };
+
   return (
     <div className="card">
       <img src={image} alt={nombre} className="card-image" />
@@ -13,7 +25,12 @@ const Card = ({ nombre, raza, edad, enAdopcion, image, fecha }) => {
           <strong>Edad:</strong> {edad} meses
         </p>
         {enAdopcion ? (
-          <button className="card-button adopt-button">Adóptame 😔</button>
+          <button
+            className="card-button adopt-button"
+            onClick={() => handleClickName(nombre)}
+          >
+            Adóptame 😔
+          </button>
         ) : (
           <div className="adopted-message">
             <h4 className="card-text">¡Ya tengo un hogar! 🏠</h4>
