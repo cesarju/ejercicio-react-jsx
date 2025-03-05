@@ -3,6 +3,8 @@ import Card from "./Card";
 
 const ListCard = ({ list }) => {
   const [text, setText] = useState("");
+  const [raza, setRaza] = useState("");
+  const [edad, setEdad] = useState(0);
   const [listData, setListData] = useState(list);
   const handleDetail = (nombre) => {
     const des = list.find((e) => e.nombre === nombre);
@@ -13,8 +15,8 @@ const ListCard = ({ list }) => {
   const handleAddItem = () => {
     const newItem = {
       nombre: text,
-      raza: "Labrador",
-      edad: 3,
+      raza: raza,
+      edad: edad,
       enAdopcion: true,
     };
     setListData([...listData, newItem]);
@@ -22,13 +24,28 @@ const ListCard = ({ list }) => {
 
   return (
     <>
+      <h3>Clase hooks - useState</h3>
+
       <div>
         <input
           type="text"
           value={text}
           onChange={(e) => {
-            console.log(e.target.value);
             setText(e.target.value);
+          }}
+        />
+        <input
+          type="text"
+          value={raza}
+          onChange={(e) => {
+            setRaza(e.target.value);
+          }}
+        />
+        <input
+          type="text"
+          value={edad}
+          onChange={(e) => {
+            setEdad(e.target.value);
           }}
         />
         <button className="payment-button" onClick={handleAddItem}>
