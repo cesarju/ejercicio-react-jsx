@@ -98,56 +98,6 @@ const data = [
       email: "gatitos@bolivia.com",
     },
   },
-  {
-    nombre: "Toby",
-    raza: "Siamesa",
-    edad: 4,
-    image:
-      "https://imgs.search.brave.com/6NziOz42zYWckiQNxQaVoSDXQ3S5FCXYD9BBir3Mfds/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzA5Lzk2LzkxLzk1/LzM2MF9GXzk5Njkx/OTU3OV9qMkZpekNn/WGw2OWZLbmlTVHZh/cE9hbjFPeGVDdW9s/WS5qcGc",
-    enAdopcion: false,
-    fecha: "10-12-2023",
-    lugar: "Refugio Huellitas de Amor, Querétaro",
-    ubicacionEncontrado: {
-      calle: "Calle San Martín",
-      numero: 321,
-      ciudad: "Santa Cruz de la Sierra",
-      provincia: "Santa Cruz",
-      pais: "Bolivia",
-    },
-    estadoSalud: "Bueno",
-    descripcion:
-      "Toby es una gata tranquila y curiosa. Fue rescatada de un edificio abandonado.",
-    contactoRescate: {
-      nombre: "Gatitos Bolivia",
-      telefono: "+591 6789 1234",
-      email: "gatitos@bolivia.com",
-    },
-  },
-  {
-    nombre: "Toby",
-    raza: "Siamesa",
-    edad: 4,
-    image:
-      "https://imgs.search.brave.com/6NziOz42zYWckiQNxQaVoSDXQ3S5FCXYD9BBir3Mfds/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzA5Lzk2LzkxLzk1/LzM2MF9GXzk5Njkx/OTU3OV9qMkZpekNn/WGw2OWZLbmlTVHZh/cE9hbjFPeGVDdW9s/WS5qcGc",
-    enAdopcion: true,
-    fecha: "10-12-2023",
-    lugar: "Refugio Huellitas de Amor, Querétaro",
-    ubicacionEncontrado: {
-      calle: "Calle San Martín",
-      numero: 321,
-      ciudad: "Santa Cruz de la Sierra",
-      provincia: "Santa Cruz",
-      pais: "Bolivia",
-    },
-    estadoSalud: "Bueno",
-    descripcion:
-      "Toby es una gata tranquila y curiosa. Fue rescatada de un edificio abandonado.",
-    contactoRescate: {
-      nombre: "Gatitos Bolivia",
-      telefono: "+591 6789 1234",
-      email: "gatitos@bolivia.com",
-    },
-  },
 ];
 
 export { data };
