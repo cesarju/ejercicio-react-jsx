@@ -1,5 +1,6 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import Card from "./Card";
+import { ThemeContext } from "./ThemeContextProvider";
 
 const ListCard = ({ list }) => {
   const [text, setText] = useState("");
@@ -22,10 +23,13 @@ const ListCard = ({ list }) => {
     setListData([...listData, newItem]);
   };
 
-  return (
-    <>
-      <h3>Clase hooks - useState</h3>
+  const { themeMode, setThemeMode } = useContext(ThemeContext);
 
+  const theme = "container-" + themeMode;
+  console.log("container-" + themeMode);
+
+  return (
+    <div className={theme}>
       <div>
         <input
           type="text"
@@ -67,7 +71,13 @@ const ListCard = ({ list }) => {
           );
         })}
       </div>
-    </>
+
+      <button
+        onClick={() => setThemeMode(themeMode === "light" ? "dark" : "light")}
+      >
+        Theme mode {themeMode === "light" ? "🌑" : "☀️"}
+      </button>
+    </div>
   );
 };
 

@@ -1,0 +1,11 @@
+.container-dark {
+  background: rgb(57, 61, 72);
+  color: white;
+  height: 100vh;
+}
+
+.container-light {
+  background: rgb(218, 221, 230);
+  color: rgb(57, 61, 72);
+  height: 100vh;
+}

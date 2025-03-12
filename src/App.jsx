@@ -4,14 +4,17 @@ import { Header } from "./components/Header";
 import { ListCard } from "./components/ListCard";
 import { FetchApi } from "./components/FetchApi";
 import { data } from "./data";
+import { ThemeContextProvider } from "./components/ThemeContextProvider";
 
 function App() {
   return (
     <>
-      <Header isLoggedIn={true} rol="Admin" />
-      {/* <Counter /> */}
-      <FetchApi />
-      <ListCard list={data} />
+      <ThemeContextProvider>
+        <Header isLoggedIn={true} rol="Admin" />
+        {/* <Counter /> */}
+        {/* <FetchApi /> */}
+        <ListCard list={data} />
+      </ThemeContextProvider>
     </>
   );
 }
