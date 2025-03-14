@@ -3,6 +3,7 @@ import { Counter } from "./components/Counter";
 import { Header } from "./components/Header";
 import { ListCard } from "./components/ListCard";
 import { FetchApi } from "./components/FetchApi";
+import { Reducer } from "./components/Reducer";
 import { data } from "./data";
 import { ThemeContextProvider } from "./components/ThemeContextProvider";
 
@@ -13,6 +14,7 @@ function App() {
         <Header isLoggedIn={true} rol="Admin" />
         {/* <Counter /> */}
         {/* <FetchApi /> */}
+        <Reducer />
         <ListCard list={data} />
       </ThemeContextProvider>
     </>
