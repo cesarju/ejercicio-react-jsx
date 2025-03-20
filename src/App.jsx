@@ -6,6 +6,8 @@ import { FetchApi } from "./components/FetchApi";
 import { Reducer } from "./components/Reducer";
 import { data } from "./data";
 import { ThemeContextProvider } from "./components/ThemeContextProvider";
+import { UseMemo } from "./components/UseMemo";
+import { UseRef } from "./components/UseRef";
 
 function App() {
   return (
@@ -14,8 +16,10 @@ function App() {
         <Header isLoggedIn={true} rol="Admin" />
         {/* <Counter /> */}
         {/* <FetchApi /> */}
-        <Reducer />
-        <ListCard list={data} />
+        {/* <Reducer /> */}
+        {/* <UseMemo /> */}
+        <UseRef />
+        {/* <ListCard list={data} /> */}
       </ThemeContextProvider>
     </>
   );
