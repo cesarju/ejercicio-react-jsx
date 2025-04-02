@@ -1,29 +1,24 @@
-import { useState } from "react";
+import { useCounter } from "../hooks/useCounter";
 
 export function Counter() {
-  const [count, setCount] = useState(1);
-
-  let contador = 1;
-  const handleAddCounter = () => {
-    contador++;
-    console.log(contador);
-    setCount(count + 1);
-  };
-  const handleMinusCounter = () => {
-    if (count > 1) {
-      setCount(count - 1);
-    }
-  };
+  const count1 = useCounter([]);
+  const { count, increment, decrement, reset } = useCounter();
+  console.log(count);
 
   return (
     <>
-      <h3>Contador: {count}</h3>
-      <button className="payment-button" onClick={handleAddCounter}>
+      <h3>Contador: {count1.count}</h3>
+      <button className="payment-button" onClick={count1.increment}>
         +
       </button>
-      <button className="payment-button" onClick={handleMinusCounter}>
+      <button className="payment-button" onClick={count1.decrement}>
         -
       </button>
+      <hr />
+      <h2>Contador Dos: {count}</h2>
+      <button onClick={increment}>sum</button>
+      <button onClick={decrement}>rest</button>
+      <button onClick={reset}>reset</button>
     </>
   );
 }

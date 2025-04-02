@@ -12,8 +12,8 @@ function App() {
       <ThemeContextProvider>
         <Header isLoggedIn={true} rol="Admin" />
         {/* <Counter /> */}
-        {/* <FetchApi /> */}
-        <ListCard list={data} />
+        <FetchApi />
+        {/* <ListCard list={data} /> */}
       </ThemeContextProvider>
     </>
   );
