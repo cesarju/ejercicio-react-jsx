@@ -5,6 +5,7 @@ import { ListCard } from "./components/ListCard";
 import { FetchApi } from "./components/FetchApi";
 import { data } from "./data";
 import { ThemeContextProvider } from "./components/ThemeContextProvider";
+import { Forms } from "./components/Form/Form";
 
 function App() {
   return (
@@ -13,7 +14,8 @@ function App() {
         <Header isLoggedIn={true} rol="Admin" />
         {/* <Counter /> */}
         {/* <FetchApi /> */}
-        <ListCard list={data} />
+        <Forms />
+        {/* <ListCard list={data} /> */}
       </ThemeContextProvider>
     </>
   );
