@@ -9,7 +9,7 @@ const ListCard = ({ list }) => {
   const [listData, setListData] = useState(list);
   const handleDetail = (nombre) => {
     const des = list.find((e) => e.nombre === nombre);
-    console.log(des);
+    // console.log(des);
     alert(des.descripcion);
   };
 
