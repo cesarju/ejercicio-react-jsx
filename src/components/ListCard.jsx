@@ -9,7 +9,6 @@ const ListCard = ({ list }) => {
   const [listData, setListData] = useState(list);
   const handleDetail = (nombre) => {
     const des = list.find((e) => e.nombre === nombre);
-    console.log(des);
     alert(des.descripcion);
   };
 
@@ -61,6 +60,7 @@ const ListCard = ({ list }) => {
           return (
             <Card
               key={crypto.randomUUID()}
+              id={item.id}
               nombre={item.nombre}
               raza={item.raza}
               edad={item.edad}

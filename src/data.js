@@ -1,5 +1,6 @@
 const data = [
   {
+    id: 1,
     nombre: "Luna",
     raza: "Labrador",
     edad: 3,
@@ -24,6 +25,7 @@ const data = [
     },
   },
   {
+    id: 2,
     nombre: "Rocky",
     raza: "Labrador",
     edad: 5,
@@ -49,6 +51,7 @@ const data = [
     },
   },
   {
+    id: 3,
     nombre: "Bella",
     raza: "Bulldog",
     edad: 2,
@@ -74,6 +77,7 @@ const data = [
     },
   },
   {
+    id: 4,
     nombre: "Toby",
     raza: "Siamesa",
     edad: 4,
@@ -100,4 +104,14 @@ const data = [
   },
 ];
 
-export { data };
+export const getAllPets = async () => {
+  return data;
+};
+
+export const getPetsByAdoptionStatus = async (enAdopcion) => {
+  return data.filter((pet) => pet.enAdopcion === enAdopcion);
+};
+
+export const getPetDetails = async (id) => {
+  return data.find((pet) => pet.id === id) || null;
+};

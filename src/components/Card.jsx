@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./card.css";
 
 const Card = ({
@@ -7,6 +8,7 @@ const Card = ({
   enAdopcion,
   image,
   fecha,
+  id,
   onClickDetails,
 }) => {
   const handleClickName = (nombre) => {
@@ -40,7 +42,9 @@ const Card = ({
           </div>
         )}
         {enAdopcion && (
-          <button className="card-button payment-button">Donar 💳</button>
+          <Link to={`/donations/${id}`}>
+            <button className="card-button payment-button">Donar 💳</button>
+          </Link>
         )}
       </div>
     </div>
