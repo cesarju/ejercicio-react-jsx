@@ -1,22 +1,10 @@
-import React, { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
-import { getPetDetails } from "../data";
+import React, { useState } from "react";
 
 const Donations = () => {
-  const { id } = useParams();
-  const [pet, setPet] = useState(null);
+  //const [pet, setPet] = useState(null);
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [amount, setAmount] = useState("");
-
-  useEffect(() => {
-    const fetchPet = async () => {
-      const petDetails = await getPetDetails(Number(id));
-      setPet(petDetails);
-    };
-
-    fetchPet();
-  }, [id]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -27,10 +15,6 @@ const Donations = () => {
     setEmail("");
     setAmount("");
   };
-
-  if (!pet) {
-    return <h1>Cargando información del animalito...</h1>;
-  }
 
   return (
     <div style={{ padding: "20px", fontFamily: "Arial, sans-serif" }}>

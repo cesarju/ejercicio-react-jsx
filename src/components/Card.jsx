@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import "./card.css";
 
 const Card = ({
@@ -42,9 +41,7 @@ const Card = ({
           </div>
         )}
         {enAdopcion && (
-          <Link to={`/donations/${id}`}>
-            <button className="card-button payment-button">Donar 💳</button>
-          </Link>
+          <button className="card-button payment-button">Donar 💳</button>
         )}
       </div>
     </div>
