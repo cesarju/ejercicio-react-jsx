@@ -60,7 +60,6 @@ const Donations = () => {
         </p>
       </div>
 
-      {/* Formulario de donación */}
       <form
         onSubmit={handleSubmit}
         style={{ maxWidth: "400px", margin: "0 auto" }}
