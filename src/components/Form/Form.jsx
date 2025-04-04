@@ -4,10 +4,13 @@ import "./form.css";
 function Forms() {
   const [name, setName] = useState("");
   const [lastName, setLastName] = useState("");
+  const [password, setPassword] = useState("");
+  const [email, setEmail] = useState("");
 
   const [formValidation, setFormValidation] = useState({
     name: undefined,
     lastName: undefined,
+    email: undefined,
   });
 
   function handleSubmit(event) {
@@ -33,6 +36,22 @@ function Forms() {
       lastName: value.length === 0 ? "El campo de Last Name es requerido" : "",
     });
     setLastName(value);
+  };
+  const handleEmailChange = (event) => {
+    const value = event.target.value;
+    const validateEmailRegex = /^\S+@\S+\.\S+$/;
+    const isValidEmail = validateEmailRegex.test(value);
+    setFormValidation({
+      ...formValidation,
+      email:
+        value.length === 0
+          ? "El campo de Email es requerido"
+          : !isValidEmail
+          ? "Por favor ingresa un email valido"
+          : "",
+    });
+
+    setEmail(value);
   };
 
   const isValidForm = Object.keys(formValidation).every(
@@ -67,7 +86,13 @@ function Forms() {
       </div>
       <label>
         Email
-        <input type="email" placeholder="Email" />
+        <input
+          type="email"
+          placeholder="Email"
+          value={email}
+          onChange={handleEmailChange}
+        />
+        {formValidation.email && <span>{formValidation.email}</span>}
       </label>
       <label>
         Password
