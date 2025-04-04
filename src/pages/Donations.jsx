@@ -1,10 +1,14 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import { getPetDetails } from "../data";
+import { useParams } from "react-router-dom";
 
 const Donations = () => {
-  //const [pet, setPet] = useState(null);
+  const [pet, setPet] = useState(null);
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [amount, setAmount] = useState("");
+
+  const { idP } = useParams();
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -15,6 +19,16 @@ const Donations = () => {
     setEmail("");
     setAmount("");
   };
+
+  useEffect(() => {
+    getPetDetails(Number(idP)).then((data) => setPet(data));
+  }, []);
+
+  console.log(idP);
+
+  if (!pet) {
+    return <h2>Loading...</h2>;
+  }
 
   return (
     <div style={{ padding: "20px", fontFamily: "Arial, sans-serif" }}>

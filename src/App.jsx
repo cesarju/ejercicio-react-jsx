@@ -4,6 +4,9 @@ import { ListCard } from "./components/ListCard";
 import { ThemeContextProvider } from "./components/ThemeContextProvider";
 import { getAllPets } from "./data";
 import { useEffect, useState } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import About from "./pages/About";
+import { Donations } from "./pages/Donations";
 
 function App() {
   const [data, setData] = useState(null);
@@ -18,8 +21,15 @@ function App() {
 
   return (
     <ThemeContextProvider>
-      <Header isLoggedIn={true} rol="Admin" />
-      <ListCard list={data} />
+      <BrowserRouter>
+        <Header isLoggedIn={true} rol="Admin" />
+        <Routes>
+          <Route path="/" element={<About />} />
+          <Route path="/listPets" element={<ListCard list={data} />} />
+          <Route path="/donation/:idP" element={<Donations />} />
+          <Route path="*" element={<h1>Error 404</h1>} />
+        </Routes>
+      </BrowserRouter>
     </ThemeContextProvider>
   );
 }

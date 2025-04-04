@@ -31,7 +31,7 @@ const data = [
     edad: 5,
     image:
       "https://imgs.search.brave.com/SXuyQfi9dlsHfc2vGWKBynbdVzynMALTzNbIg_xUDws/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/Zm90b3MtcHJlbWl1/bS9wZXJyaXRvc18y/MzE5NzQtMTguanBn/P3NlbXQ9YWlzX2h5/YnJpZA",
-    enAdopcion: false,
+    enAdopcion: true,
     fecha: "15-03-2024",
     lugar: "Refugio Patitas Felices, Monterrey",
     ubicacionEncontrado: {
@@ -83,7 +83,7 @@ const data = [
     edad: 4,
     image:
       "https://imgs.search.brave.com/6NziOz42zYWckiQNxQaVoSDXQ3S5FCXYD9BBir3Mfds/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzA5Lzk2LzkxLzk1/LzM2MF9GXzk5Njkx/OTU3OV9qMkZpekNn/WGw2OWZLbmlTVHZh/cE9hbjFPeGVDdW9s/WS5qcGc",
-    enAdopcion: false,
+    enAdopcion: true,
     fecha: "10-12-2023",
     lugar: "Refugio Huellitas de Amor, Querétaro",
     ubicacionEncontrado: {

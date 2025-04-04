@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./header.css";
 
 export function Header(props) {
@@ -7,7 +8,7 @@ export function Header(props) {
         <h1>🐕</h1>
         <ul className="nav-list">
           <li className="nav-item">
-            <a className="nav-link" href="">
+            <a className="nav-link" href="/">
               Home
             </a>
           </li>
@@ -28,14 +29,14 @@ export function Header(props) {
         <p className="logo-container">🐕</p>
         <ul className="nav-list">
           <li className="nav-item">
-            <a className="nav-link" href="">
-              Inicio
-            </a>
+            <Link to="/" className="nav-link">
+              About
+            </Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="">
-              Perdidos
-            </a>
+            <Link to={"/listPets"} className="nav-link">
+              Lista de Animalitos
+            </Link>
           </li>
           <li className="nav-item">
             <a className="nav-link" href="">
