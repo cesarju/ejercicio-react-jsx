@@ -128,4 +128,4 @@ const Donations = () => {
   );
 };
 
-export { Donations };
+export default Donations;

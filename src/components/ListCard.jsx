@@ -81,4 +81,4 @@ const ListCard = ({ list }) => {
   );
 };
 
-export { ListCard };
+export default ListCard;
