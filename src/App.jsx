@@ -25,19 +25,21 @@ function App() {
   }
 
   return (
-    <ThemeContextProvider>
-      <BrowserRouter>
-        <Header isLoggedIn={true} rol="Admin" />
-        <Suspense fallback={<h1>✅ Loading...</h1>}>
-          <Routes>
-            <Route path="/" element={<About />} />
-            <Route path="/listPets" element={<ListCard list={data} />} />
-            <Route path="/donation/:idP" element={<Donations />} />
-            <Route path="*" element={<h1>Error 404</h1>} />
-          </Routes>
-        </Suspense>
-      </BrowserRouter>
-    </ThemeContextProvider>
+    <>
+      <ThemeContextProvider>
+        <BrowserRouter>
+          <Header isLoggedIn={true} rol="Admin" />
+          <Suspense fallback={<h1>✅ Loading...</h1>}>
+            <Routes>
+              <Route path="/" element={<About />} />
+              <Route path="/listPets" element={<ListCard list={data} />} />
+              <Route path="/donation/:idP" element={<Donations />} />
+              <Route path="*" element={<h1>Error 404</h1>} />
+            </Routes>
+          </Suspense>
+        </BrowserRouter>
+      </ThemeContextProvider>
+    </>
   );
 }
 

@@ -25,7 +25,7 @@ const ListCard = ({ list }) => {
   const { themeMode, setThemeMode } = useContext(ThemeContext);
 
   const theme = "container-" + themeMode;
-  console.log("container-" + themeMode);
+  // console.log("container-" + themeMode);
 
   return (
     <div className={theme}>
